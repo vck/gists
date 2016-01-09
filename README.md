@@ -1,0 +1,2 @@
+# gists
+abstract, mostly pseudocodes
