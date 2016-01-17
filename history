@@ -1,0 +1,112 @@
+import deap
+clear
+import deap
+deap
+from bs4 import BeautifulSoup as bs
+import urllib2
+data = urllib2.urlopen("http://www.start.umd.edu/gtd/search/Results.aspx?page=1&casualties_type=b&casualties_max=&dtp2=all&country=93&charttype=line&chart=overtime&ob=GTDID&od=desc&expanded=yes#results-table")
+html = data.read()
+html
+clear
+soup = bs(html)
+soup.findAll('tr')
+soup.findAll('tr',{"class":"white"})
+data_a = [t.text for t in soup.findAll('tr',{"class":"white"})]
+data
+data_a
+data_a.split()
+data_a[0].split()
+len(data)
+len(data_a)
+data_a = [t.text.encode('ascii') for t in soup.findAll('tr',{"class":"white"})]
+data_a
+data_a[0].split()
+for i in range(len(data_a)):
+    print data_a[i].split()
+len(data_a[0])
+len(data_a[0].split())
+data_a[0].split()[0]
+data_a[0].split()[1]
+data_a[0].split()[2]
+data_a[0].split()[3]
+data_a[0].split()[4]
+data_a[0].split()[5]
+data_a[0].split()[6]
+data_a[0].split()[7]
+data_a[0].split()[8]
+data_a[0].split()[9]
+data_a[0].split()[10]
+data_a[0].split()[11]
+for i in range(len(data_a)):data_a[0].split()
+for i in range(len(data_a)):
+    print data_a[i].split()[10]
+for i in range(len(data_a)):
+    print data_a[i].split()[6]
+for i in range(len(data_a)):
+    print data_a[i].split()[5]
+for i in range(len(data_a)):
+    print data_a[i].split()[4]
+for i in range(len(data_a)):
+    print data_a[i].split()[3]
+for i in range(len(data_a)):
+    print data_a[i].split()[2]
+for i in range(len(data_a)):
+    print data_a[i].split()[9]
+d [[] for x in xrange(10)]
+d = [[] for x in xrange(10)]
+d
+d = [[] for x in xrange(len(data_a))]
+d
+len(d)
+d = [[] for x in xrange(len(data_a+1))]
+d = [[] for x in xrange(len(data_a)+1)]
+d
+len(d)
+for i in range(len(d)):
+    for n in range(len(data_a)):
+        d[i].append(data_a[n].split()[3])
+d
+d = [ [] for n in xrange(11+1) ]
+d
+clear
+d[0]
+data_a
+data_a[0].split()
+data_a[1].split()
+data_a[2].split()
+for i in range(len(data_a)):
+    d[0].append(data_a[1])
+d
+d = [[] for x in xrange(len(12))]
+d = [[] for x in xrange(12)]
+d
+for i in range(len(data_a)):
+    d[0].append(data_a[i].split(1))
+for i in range(len(data_a)):
+    d[0].append(data_a[i].split()[1])
+d
+for i in range(len(data_a)):
+    d[1].append(data_a[i].split()[2])
+d
+d[1] = []
+d
+len(d)
+%save
+ls
+cd ~/dev/git/
+cd gists/
+ls
+%save global-terrorist-database
+ls
+%save global-terrorist-database.py
+import readline
+readline.write_history_file('~/dev/git/gitst/history')
+readline.write_history_file('~/dev/git/gitst/history')
+readline.write_history_file('~/dev/git/gists/history')
+readline.write_history_file('~/history')
+readline.write_history_file('~/history')
+%history
+%history -r
+ls
+%history -r history
+%history -f history
