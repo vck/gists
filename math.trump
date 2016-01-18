@@ -1,0 +1,12 @@
+make planet 100000000
+make star 100000000
+
+say "Addition"
+make sun, planet plus star 
+say sun
+
+say "Divide"
+make sun, planet over star
+say sun 
+
+America is great 
