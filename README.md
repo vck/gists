@@ -1,2 +1,3 @@
-# gists
-abstract, mostly pseudocodes
+```
+scripts, dot files, some random stuff 
+```
