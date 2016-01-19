@@ -2,8 +2,8 @@ package main
 
 import (
   "fmt"
-  "os"
   "os/exec"
+  "log"
 )
 
 func shell(cmd string)string{
@@ -13,13 +13,13 @@ func shell(cmd string)string{
     )
 
   if cmdOut, err = exec.Command(cmd).Output(); err != nil{
-    os.Exit(1)
+   log.Fatal(err)
   }
   return string(cmdOut)
 
 }
 
 func main() {
-  str := shell("ls")
+  str := shell("sasaasaa")
   fmt.Println(str)
 }
