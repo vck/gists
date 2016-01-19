@@ -23,10 +23,7 @@ func cmd(command string)string{
 
 
 func main() {
-    var (
-        cmdOut []byte 
-        err     error
-    )
+ 
 
     bot, err := telebot.NewBot(botToken)
     if err != nil {
