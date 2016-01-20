@@ -1,7 +1,5 @@
 import re 
 
-EXPR = ['+','-']
-
 class Parser:
 	def Parse(self, expression):
 		expr, num = [], []
@@ -12,6 +10,15 @@ class Parser:
 
 		return (("NUM", num), ("EXPR",expr))
 
+def main():
+	while True:
+		expr = raw_input(">>> ")
+		if expr:
+			print Parser().Parse(expr)
+		continue
+
+if __name__ == "__main__":
+	main()
 	
 
 
