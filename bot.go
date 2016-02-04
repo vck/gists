@@ -15,7 +15,8 @@ func cmd(command string)string{
         cmdOut []byte
         err     error
     )
-    cmdOut, err = exec.Command(command).Output(); if err != nil{
+    cmdOut, err = exec.Command(command).Output(); 
+    if err != nil{
         log.Fatal(err)
     }
     return string(cmdOut)
