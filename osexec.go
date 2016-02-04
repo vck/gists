@@ -20,6 +20,6 @@ func shell(cmd string)string{
 }
 
 func main() {
-  str := shell("sasaasaa")
+  str := shell("who")
   fmt.Println(str)
 }
