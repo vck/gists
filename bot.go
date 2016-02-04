@@ -30,11 +30,11 @@ func main() {
     messages := make(chan telebot.Message)
     bot.Listen(messages, 1*time.Second)
     for message := range messages {
-        if message.Text == "/status" {
+        if message.Text == "stat" {
             uptime := cmd("uptime")
             bot.SendMessage(message.Chat, uptime, nil)
         }
-        if message.Text == "/dir"{
+        if message.Text == "dir"{
             ls := cmd("ls")
             bot.SendMessage(message.Chat, ls, nil)
         }
