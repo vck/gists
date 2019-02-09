@@ -1,20 +1,14 @@
-package main 
+package main
 
-import "net/http"
-import "log"
-import "os"
-import "fmt"
+import (
+  "log"
+  "net/http"
+)
 
-func main(){
-	port, err := os.Getenv("PORT"); 
-	if err != nil{
-		log.Fatal(err)
-		os.Exit(1)
-	}
-	-, err := http.ListenAndServe(port, http.FileServer(http.Dir("/var/www")));
-	if err != nil{
-		log.Fatal(err)
-		os.Exit(1)
-	}
-		fmt.Println("server running on localhost"+port)
+func main() {
+  fs := http.FileServer(http.Dir("/root/foml/"))
+  http.Handle("/", fs)
+
+  log.Println("Listening...")
+  http.ListenAndServe(":3000", nil)
 }
