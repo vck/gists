@@ -1,4 +1,3 @@
-colorscheme pablo
 set number
 set expandtab           " enter spaces when tab is pressed
 set textwidth=120       " break lines when line length increases
